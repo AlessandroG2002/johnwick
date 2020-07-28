@@ -13,222 +13,349 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link href="reset.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <!-- Este é o menu superior do site -->
-  <div class="menu">
-    <a class="ativo" href="index.html">John Wick: De volta ao jogo</a>
-    <a href="">John Wick 2: Um novo dia para matar</a>
-    <a href="">John Wick 3: Parabellum</a>
-    <a href="">John Wick 4</a>
-    <img src="https://i.imgur.com/lQabAr7.png" alt="Logo do menu">
-  </div>
+
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #322a66;">
+    <a class="navbar-brand" href="#">
+      <img src="https://i.imgur.com/bCLsdAp.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">John Wick<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">John Wick 2</a>
+        <a class="nav-item nav-link" href="#">John Wick 3</a>
+        <a class="nav-item nav-link" href="#">John Wick 4</a>
+      </div>
+    </div>
+  </nav>
 
   <!-- Este é a apresentação inicial do site com o título e link para o trailer do filme -->
   <div class="inicio">
     <h1>John Wick</h1>
-    <p>De volta ao jogo.</p>
+    <p>De volta ao jogo</p>
     <a href="https://www.youtube.com/watch?v=rUKOAwlyNag" target="_blank">Assistir Trailer</a>
   </div>
 
   <!-- Esta é a tabela com os creditos do pessoal (não são todos) que trabalhou no filme -->
-  <table class="creditos">
-    <tr>
-      <th>Direção</th>
-      <td>Chad Stahelski</td>
-      <td>David Leitch</td>
-    </tr>
-    <tr>
-      <th>Produção</th>
-      <td>Basil Iwanyk</td>
-      <td>Chad Stahelski</td>
-      <td>David Leitch</td>
-      <td>Eva Longoria</td>
-      <td>Michael Witherill</td>
-    </tr>
-    <tr>
-      <th>Roteiro</th>
-      <td>Derek Kolstad</td>
-    </tr>
-    <tr>
-      <th>Elenco</th>
-      <td>Keanu Reeves</td>
-      <td>Michael Nyqvist</td>
-      <td>Alfie Allen</td>
-      <td>Adrianne Palicki</td>
-      <td>Bridget Moynahan</td>
-      <td>Dean Winters</td>
-      <td>Ian McShane</td>
-      <td>John Leguizamo</td>
-      <td>Willem Dafoe</td>
-    </tr>
-    <tr>
-      <th>Música</th>
-      <td>Tyler Bates</td>
-      <td>Joel J. Richard</td>
-    </tr>
-    <tr>
-      <th>Cinematografia</th>
-      <td>Jonathan Sela</td>
-    </tr>
-    <tr>
-      <th>Edição</th>
-      <td>Elísabet Ronalds</td>
-    </tr>
-  </table>
+  <div class="container">
+    <table class="table table-hover table-dark table-responsive rounded" style="background-color: #1e1949;">
+      <tbody>
+        <tr>
+          <th scope="row">Elenco</th>
+          <td>Keanu Reeves</td>
+          <td>Michael Nyqvist</td>
+          <td>Alfie Allen</td>
+          <td>Adrianne Palicki</td>
+          <td>Bridget Moynahan</td>
+          <td>Dean Winters</td>
+          <td>Ian McShane</td>
+          <td>John Leguizamo</td>
+        </tr>
+        <tr>
+          <th scope="row">Produção</th>
+          <td>Basil Iwanyk</td>
+          <td>Chad Stahelski</td>
+          <td>David Leitch</td>
+          <td>Eva Longoria</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">Direção</th>
+          <td>Chad Stahelski</td>
+          <td>David Leitch</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">Música</th>
+          <td>Tyler Bates</td>
+          <td>Joel J. Richard</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">Roteiro</th>
+          <td>Derek Kolstad</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">Cinematografia</th>
+          <td>Jonathan Sela</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">Edição</th>
+          <td>Elísabet Ronalds</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
 
   <!-- Esta seção é o texto principal apresentado no site, junto com as imagens disponíveis -->
-  <div class="texto">
-    <h1>Enredo</h1>
+  <div class="container">
+    <div class="texto">
+      <hr>
 
-    <p>John Wick perdeu sua esposa Helen por causa de uma doença terminal, e para ajudá-lo a lidar melhor com a sua morte, 
-      ele recebe um cachorro beagle dela, que instruiu a ser entregue a ele quando ela falecesse. 
-      Ele considera o cachorro uma conexão a sua falecida esposa e, por consequência, aprecia muito a sua presença, 
-      passando o dia com o animal e dirigindo um de seus carros, o Mustang Boss 429. Num posto de gasolina, 
-      um grupo de gangsters russos se aproximam do carro, cujo o líder, Iosef Tarasov, propõe comprar o veículo, 
-      entretanto John recusa a proposta e sai do local. Ainda desamparado com a morte da esposa, e após o encontro com os russos desagradáveis, 
-      John vai a um antigo aeroporto particular para descarregar a sua raiva e frustração dirigindo o seu Mustand a toda velocidade e 
-      fazendo manobras. Depois de ele voltar para o seu lar, os russos chegam na casa de John para invadi-la e roubar seu carro, 
-      sendo que no processo acabam matando Daisy, o cachorro beagle, na frente de John, e o atacam, para depois partir com o seu veículo. 
-      No dia seguinte, o líder da gangue dos russos, Iosef, tenta ter o carro roubado modificado por Aurelio, 
-      o proprietário de um Chop Shop que se recusa a alterar o carro e agride Iosef ao perceber que o carro era de John Wick. 
-      John visita Aurelio pouco tempo depois para buscar informações e o homem acaba lhe dizendo que Iosef é o filho de Viggo Tarasov, 
-      chefe do sindicato do crime russo em Nova York e ex-empregador de John, e lhe empresta um outro carro para John usar. 
-      Aurelio, que trabalha com Viggo, é obrigado a explicar o que aconteceu a ele. Viggo repreende seu filho, 
-      Iosef, e explica quem John Wick é: seu melhor assassino, apelidado de Baba Yaga (ou "Bicho Papão"), 
-      que se aposentou depois de se apaixonar por uma mulher, tinha ajudado Viggo ganhar o controle de seu sindicato, 
-      eliminando sozinho toda a concorrência, uma tarefa que ele considerou "impossível".</p>
+      <h1 class="text-center font-weight-bold py-4" style="color: #322988;">ENREDO</h1>
 
-      <img src="https://www.gannett-cdn.com/-mm-/33b7d2543d253f6736447d88d3bde2e60b4bb46d/c=0-181-3600-2215/local/-/media/USATODAY/None/2014/10/21/635494961822000008-BEAGLE-JOHN-WICK-MOV-JY-3400--68084492.JPG" alt="John Wick e sua cadela, Daisy.">
+      <hr>
 
-    <p>Viggo, buscando a proteção de seu filho, tenta convencer John a desistir de buscar a vingança contra Iosef, entretanto, 
-      John Wick recusa imediatamente, forçando Viggo a enviar um esquadrão de ataque a sua casa para executá-lo, 
-      fazendo apenas com que os homens fossem facilmente eliminados por ele. Viggo em seguida, 
-      propõe uma recompensa de 2 milhões de dólares pela cabeça de John Wick e primeiramente dá a oferta à Marcus, 
-      o instrutor assasino veterano de John que aceita a proposta com um pé atrás. John, após o ataque do esquadrão, 
-      busca refúgio no Continental, um hotel de atendimento exclusivo para assassinos, que possue regras restritas 
-      que nenhum assassinato pode ser cometido no local. Quando Viggo descobre isso, ele aumenta a recompensa para 4 milhões. 
-      John ouve falar de Winston, dono do Continental, que Viggo tem o seu filho Iosef alojado e protegido em seu clube noturno, 
-      o Círculo Vermelho. John vai para o clube e mata o amigo de Iosef, Victor, 
-      antes de fazer uma chacina com a maioria do pessoal da segurança do local, mas Iosef escapa após John ser atacado pelo capanga de Viggo, 
-      Kirill. John volta ao Continental para tratar as suas feridas e é atacado por Ms. Perkins, 
-      uma assassina e antiga conhecida dele que tomou o contrato para matá-lo. John vence Perkins e a prende em seu apartamento, 
-      obrigando-a a revelar a localização do esconderijo do dinheiro de Viggo, e logo após isso sai para caça-lo, 
-      deixando um vizinho e amigo, Harry, para guardar o quarto e aguardar a punição dela por quebrar as regras do hotel. 
-      Perkins, eventualmente, se liberta e mata Harry.</p>
+      <p class="text-justify" style="color: #0d092a;">John Wick perdeu sua esposa Helen por causa de uma doença terminal, e para ajudá-lo a lidar melhor com a sua morte, 
+        ele recebe um cachorro beagle dela, que deveria ser entregue a ele quando ela falecesse. 
+        Ele considera o cachorro uma conexão a sua falecida esposa e, por consequência, aprecia muito a sua presença, 
+        passando o dia com o animal e dirigindo um de seus carros, o Mustang Boss 429.</p>
 
-      <img src="https://basilmarinerchase.files.wordpress.com/2014/10/john-wick-control-freak.jpg" alt="John Wick no Círculo Vermelho.">
+      <p class="text-justify" style="color: #0d092a">Num posto de gasolina, 
+        um grupo de gangsters russos se aproximam do carro, cujo o líder, Iosef Tarasov, propõe comprar o veículo, 
+        entretanto John recusa a proposta e sai do local. Ainda desamparado com a morte da esposa, e após o encontro com os russos desagradáveis, 
+        John vai a um antigo aeroporto particular para descarregar a sua raiva e frustração dirigindo o seu Mustand a toda velocidade e 
+        fazendo manobras.</p>
 
-    <p>John vai para a igreja, que é uma fachada para esconder o dinheiro de Viggo, e elimina todos os guardas, 
-      além de queimar o dinheiro, bem como vários arquivos e ficharios contra policiais e funcionários do governo que Viggo 
-      usa como chantagem sobre a cidade. Quando Viggo chega na igreja, John o embosca, 
-      matando ainda mais capangas antes de ser imobilizado por Kirill, que bate em John com uma SUV. John é preso e amarrado, 
-      Viggo zomba dele por fazer isso tudo por causa de um cachorro e fala que pensava que ele poderia deixar sua antiga vida para trás. 
-      Ele deixa John para ser torturado e morto por Kirill e outro capanga, mas Marcus, 
-      que escolheu ficar ao lado de John em vez de cumprir o seu contrato, mata o outro capanga, 
-      permitindo que John se liberte e mate Kirill. 
-      John então intercepta o carro de Viggo e o obriga a revelar a localização de Iosef além de retirar a recompensa em sua cabeça, 
-      que o homem relutantemente obedece. John então vai a casa segura onde Iosef está escondido e mata todos os 
-      guardas antes de matar um Iosef sem nenhum remorso.</p>
+      <p class="text-justify" style="color: #0d092a">Depois de ele voltar para o seu lar, os russos chegam na casa de John para invadi-la e roubar seu carro, 
+        sendo que no processo acabam matando Daisy, o cachorro beagle, na frente de John, e o atacam, para depois partir com o seu veículo. 
+        No dia seguinte, o líder da gangue dos russos, Iosef, tenta ter o carro roubado modificado por Aurelio, 
+        o proprietário de um Chop Shop que se recusa a alterar o carro e agride Iosef ao perceber que o carro era de John Wick.</p>
 
-      <img src="https://wallup.net/wp-content/uploads/2019/09/475666-john-wick-action-thriller-hitman-assassin-john-wick-reeves-keanu-1.jpg" alt="John Wick preso conversando com Viggo.">
+      <p class="text-justify" style="color: #0d092a"> 
+        John visita Aurelio pouco tempo depois para buscar informações e o homem acaba lhe dizendo que Iosef é o filho de Viggo Tarasov, 
+        chefe do sindicato do crime russo em Nova York e ex-empregador de John, e lhe empresta um outro carro para John usar. 
+        Aurelio, que trabalha com Viggo, é obrigado a explicar o que aconteceu a ele. Viggo repreende seu filho, 
+        Iosef, e explica quem John Wick é: seu melhor assassino, apelidado de Baba Yaga (ou "Bicho Papão"), 
+        que se aposentou depois de se apaixonar por uma mulher, tinha ajudado Viggo ganhar o controle de seu sindicato, 
+        eliminando sozinho toda a concorrência, uma tarefa que ele considerou "impossível".</p>
 
-    <p>Perkins vê que John e Marcus entraram em contato e diz a Viggo, que tortura Marcus e o mata em sua casa por causa de sua traição. 
-      Viggo conta a John sobre a morte de Marcus, atraindo-o para a sua casa, onde Perkins o esperava para fazer uma emboscada. 
-      Antes que ela pudesse realizar o ato, ela é chamada para uma reunião secreta com Winston, o dono do Continental, 
-      que revoga a sua associação com o hotel por quebrar as regras e é executada por causa disso. 
-      Winston chama John para informa-lo que Viggo está querendo escapar da cidade através de um helicoptero. 
-      John corre para o porto e elimina o restante dos capangas de Viggo antes de iniciar uma briga com ele no banco dos réus. 
-      Viggo propõe uma luta justa sem armas e John aceita, 
-      entretanto Viggo puxa uma faca durante a luta e apunhala John em seu abdômen já ferido. 
-      Ferido, John se sobrepõe na batalha e toma a faca de Viggo, o esfaqueando no lado do pescoço. 
-      Viggo, mortalmente ferido, perde a respiração e morre, e John, ferido, mas ainda capaz de andar, 
-      para para voltar a assistir a um vídeo dele e de sua esposa em seu telefone. Depois de ganhar forças, 
-      John acaba em um hospital veterinário para tratar seu ferimento antes de libertar um pit-bull para fora de uma das 
-      gaiolas para uma caminhada no calçadão, onde teve seu último encontro com Helen.</p>
+        <img src="https://www.gannett-cdn.com/-mm-/33b7d2543d253f6736447d88d3bde2e60b4bb46d/c=0-181-3600-2215/local/-/media/USATODAY/None/2014/10/21/635494961822000008-BEAGLE-JOHN-WICK-MOV-JY-3400--68084492.JPG" class="rounded img-fluid" alt="John Wick e sua cadela, Daisy.">
 
-      <img src="https://i.imgur.com/HGL3N7d.png" alt="John Wick e Viggo caídos após sua batalha.">
+      <p class="text-justify" style="color: #0d092a">Viggo, buscando a proteção de seu filho, tenta convencer John a desistir de buscar a vingança contra Iosef, entretanto, 
+        John Wick recusa imediatamente, forçando Viggo a enviar um esquadrão de ataque a sua casa para executá-lo, 
+        fazendo apenas com que os homens fossem facilmente eliminados por ele. </p>
+
+        <p class="text-justify" style="color: #0d092a">Viggo em seguida, 
+          propõe uma recompensa de 2 milhões de dólares pela cabeça de John Wick e primeiramente dá a oferta à Marcus, 
+          o instrutor assasino veterano de John que aceita a proposta com um pé atrás. John, após o ataque do esquadrão, 
+          busca refúgio no Continental, um hotel de atendimento exclusivo para assassinos, que possue regras restritas 
+          que nenhum assassinato pode ser cometido no local.</p>
+
+        <p class="text-justify" style="color: #0d092a">Quando Viggo descobre isso, ele aumenta a recompensa para 4 milhões. 
+          John ouve falar de Winston, dono do Continental, que Viggo tem o seu filho Iosef alojado e protegido em seu clube noturno, 
+          o Círculo Vermelho. John vai para o clube e mata o amigo de Iosef, Victor, 
+          antes de fazer uma chacina com a maioria do pessoal da segurança do local, mas Iosef escapa após John ser atacado pelo capanga de Viggo, 
+          Kirill.</p>
+
+        <p class="text-justify" style="color: #0d092a">John volta ao Continental para tratar as suas feridas e é atacado por Ms. Perkins, 
+          uma assassina e antiga conhecida dele que tomou o contrato para matá-lo. John vence Perkins e a prende em seu apartamento, 
+          obrigando-a a revelar a localização do esconderijo do dinheiro de Viggo, e logo após isso sai para caça-lo, 
+          deixando um vizinho e amigo, Harry, para guardar o quarto e aguardar a punição dela por quebrar as regras do hotel. 
+          Perkins, eventualmente, se liberta e mata Harry.</p>
+
+        <img src="https://basilmarinerchase.files.wordpress.com/2014/10/john-wick-control-freak.jpg" class="rounded img-fluid" alt="John Wick no Círculo Vermelho.">
+
+      <p class="text-justify" style="color: #0d092a">John vai para a igreja, que é uma fachada para esconder o dinheiro de Viggo, e elimina todos os guardas, 
+        além de queimar o dinheiro, bem como vários arquivos e ficharios contra policiais e funcionários do governo que Viggo 
+        usa como chantagem sobre a cidade.</p>
+
+        <p class="text-justify" style="color: #0d092a">Quando Viggo chega na igreja, John o embosca, 
+          matando ainda mais capangas antes de ser imobilizado por Kirill, que bate em John com uma SUV. John é preso e amarrado, 
+          Viggo zomba dele por fazer isso tudo por causa de um cachorro e fala que pensava que ele poderia deixar sua antiga vida para trás. 
+          Ele deixa John para ser torturado e morto por Kirill e outro capanga, mas Marcus, 
+          que escolheu ficar ao lado de John em vez de cumprir o seu contrato, mata o outro capanga, 
+          permitindo que John se liberte e mate Kirill.</p>
+
+        <p class="text-justify" style="color: #0d092a"> John então intercepta o carro de Viggo e o obriga a revelar a localização de Iosef além de retirar a recompensa em sua cabeça, 
+          que o homem relutantemente obedece. John então vai a casa segura onde Iosef está escondido e mata todos os 
+          guardas antes de matar um Iosef sem nenhum remorso.</p>
+
+        <img src="https://wallup.net/wp-content/uploads/2019/09/475666-john-wick-action-thriller-hitman-assassin-john-wick-reeves-keanu-1.jpg" class="rounded img-fluid" alt="John Wick preso conversando com Viggo.">
+
+      <p class="text-justify" style="color: #0d092a">Perkins vê que John e Marcus entraram em contato e diz a Viggo, que tortura Marcus e o mata em sua casa por causa de sua traição. 
+        Viggo conta a John sobre a morte de Marcus, atraindo-o para a sua casa, onde Perkins o esperava para fazer uma emboscada. 
+        Antes que ela pudesse realizar o ato, ela é chamada para uma reunião secreta com Winston, o dono do Continental, 
+        que revoga a sua associação com o hotel por quebrar as regras e é executada por causa disso. 
+        </p>
+
+        <p class="text-justify" style="color: #0d092a">Winston chama John para informa-lo que Viggo está querendo escapar da cidade através de um helicoptero. 
+          John corre para o porto e elimina o restante dos capangas de Viggo antes de iniciar uma briga com ele no banco dos réus. 
+          Viggo propõe uma luta justa sem armas e John aceita, 
+          entretanto Viggo puxa uma faca durante a luta e apunhala John em seu abdômen já ferido. 
+          Ferido, John se sobrepõe na batalha e toma a faca de Viggo, o esfaqueando no lado do pescoço. 
+          Viggo, mortalmente ferido, perde a respiração e morre, e John, ferido, mas ainda capaz de andar, 
+          para para voltar a assistir a um vídeo dele e de sua esposa em seu telefone. </p>
+
+        <p class="text-justify" style="color: #0d092a">Depois de ganhar forças, 
+          John acaba em um hospital veterinário para tratar seu ferimento antes de libertar um pit-bull para fora de uma das 
+          gaiolas para uma caminhada no calçadão, onde teve seu último encontro com Helen.</p>
+
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="853" height="480" src="https://www.youtube.com/embed/8IfFX7oMpQI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
   </div>
 
   <!-- Esta é a seção final onde é apresentada a recepção do filme -->
-  <div class="recepcao">
-    <h1>Recepção do filme</h1>
 
-    <div class="coluna">
-      <img src="https://i.imgur.com/WXrM3BM.png" alt="John Wick" style="width:50%">
-      <blockquote>
-          <p>"John Wick é um homem de foco, compromisso e uma maldita força de vontade. Uma vez o vi matar três homens em um bar... com um lápis. Com a porra de um lápis!"</p>
-          <cite>Viggo Tarasov</cite>
-      </blockquote> 
+  <div class="container">
+    <hr>
+
+    <h1 class="text-center font-weight-bold py-4" style="color: #322988;">RECEPÇÃO DO FILME</h1>
+
+    <hr>
+
+    <div class="card mb-3" style="max-width: 1280px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="https://i.pinimg.com/originals/77/3d/8e/773d8ef679fce2bff08f1d5b32c8ec10.gif" class="card-img" alt="John Wick">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <p class="card-text" style="color: #0d092a">"John Wick é um homem de foco, compromisso e uma maldita força de vontade. Uma vez o vi matar três homens em um bar... com um lápis. Com a porra de um lápis!"</p>
+            <p class="card-text"><small class="text-muted">- Viggo Tarasov</small></p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="coluna">
-      <blockquote>
-          <p>
-            "Justo quando você quase perdeu a esperança em Keanu Reeves... chega o filme de vingança hiper-estilizado John Wick.
-            E você se lembra do que amava nele em primeiro lugar."
-          </p>
-      </blockquote>
-
-      <blockquote>
-          <p>
-            "Simplificando, John Wick é provavelmente um dos melhores filmes de ação da década.
+    <div class="card-group">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #322988;">Wendy Ide</h5>
+          <p class="card-text" style="color: #0d092a">"Justo quando você quase perdeu a esperança em Keanu Reeves... chega o filme de vingança hiper-estilizado John Wick.
+            E você se lembra do que amava nele em primeiro lugar."</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Times (UK)</small>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #322988;">Karl Delossantos</h5>
+          <p class="card-text" style="color: #0d092a">"Simplificando, John Wick é provavelmente um dos melhores filmes de ação da década.
             De uma história eficiente a incríveis sequências de luta e um início de ação que inicialmente não parece muito,
-            John Wick é o mais perto de perfeito que eu já vi."
-          </p>
-      </blockquote>
-
-      <blockquote>
-          <p>
-            "Um ex-assassino e seu cachorro, que tem uma trama tão triste que eu nem vou me aprofundar na questão de saber se
+            John Wick é o mais perto de perfeito que eu já vi."</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Smash Cut Reviews</small>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #322988;">Sarah Cartland</h5>
+          <p class="card-text" style="color: #0d092a">"Um ex-assassino e seu cachorro, que tem uma trama tão triste que eu nem vou me aprofundar na questão de saber se
             você deve dar a alguém um animal de estimação como presente. A violência é um balé de assassinatos,
-            em um mundo subterrâneo convincente de perfeição auto-contida."
-          </p>
-      </blockquote>
-
-        <cite>Críticas retiradas e traduzidas do site Rotten Tomatoes</cite>
+            em um mundo subterrâneo convincente de perfeição auto-contida."</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Caution Spoilers</small>
+        </div>
+      </div>
     </div>
 
-    <div class="coluna">
-        <p>
-          John Wick recebeu uma recepção positiva após o lançamento, recebendo elogios pelas seqüências de ação, 
-          direção, estilo visual, ritmo e as performances do elenco, especialmente Keanu Reeves como John Wick. 
-          O site de resenhas críticas Rotten Tomatoes deu ao filme uma pontuação de 87% com base em 211 avaliações 
-          e uma classificação média de 6,95/10. Seu consenso crítico diz: "Elegante, emocionante e vertiginosamente cinético, 
-          John Wick serve como um retorno satisfatório à ação de Keanu Reeves - e o que parece ser o primeiro de uma franquia". 
-          Metacritic, outro agregador de críticas, atribuiu ao filme uma pontuação média ponderada de 68 em 100, 
-          com base em críticas de 40 críticos, indicando "críticas geralmente favoráveis". 
-          O CinemaScore informou que o público atribuiu ao filme uma classificação "B", na escala A+ a F.
-        </p>
+  <div class="jumbotron jumbotron-fluid rounded" style="background-color: #322988;">
+    <div class="container">
+      <p class="lead" style="color: white;"><strong>John Wick</strong> recebeu uma recepção positiva após o lançamento, recebendo elogios pelas seqüências de ação, 
+        direção, estilo visual, ritmo e as performances do elenco, especialmente Keanu Reeves como John Wick. 
+        O site de resenhas críticas <strong><a href="https://www.rottentomatoes.com/m/john_wick" target="_blank" style="text-decoration: none; color: white;">Rotten Tomatoes</a></strong> deu ao filme uma pontuação de <strong>87%</strong> com base em <strong>211</strong> avaliações 
+        e uma classificação média de <strong>6,95/10</strong>. Seu consenso crítico diz: "Elegante, emocionante e vertiginosamente cinético, 
+        John Wick serve como um retorno satisfatório à ação de Keanu Reeves - e o que parece ser o primeiro de uma franquia". 
+        Metacritic, outro agregador de críticas, atribuiu ao filme uma pontuação média ponderada de <strong>68 em 100</strong>, 
+        com base em críticas de <strong>40</strong> críticos, indicando "críticas geralmente favoráveis". 
+        O CinemaScore informou que o público atribuiu ao filme uma classificação <strong>"B"</strong>, na escala <strong>A a F</strong>.</p>
 
-        <p>
-          Aclamado pela crítica e pelos fãs, já era de se esperar que uma continuação fosse ser produzida para o sucesso
-          de vendas.
-        </p>
+      <p class="lead" style="color: white;">Aclamado pela crítica e pelos fãs, já era de se esperar que uma continuação fosse ser produzida para o sucesso
+        de vendas.</p>
 
-        <p>
-          Uma sequência foi lançada em 10 de fevereiro de 2017 e, no CinemaCon de 2016, 
-          Reeves deu a entender que mais sequências haviam sido planejadas. 
-          Após o lançamento de John Wick: Chapter 2, um terceiro filme foi lançado em 17 de maio de 2019 com o nome de 
-          John Wick: Chapter 3 - Parabellum. Uma quarta parte, John Wick: Capítulo 4, está em andamento e 
-          está previsto para ser lançado em 21 de maio de 2021.
-        </p>
+      <p class="lead" style="color: white;">Uma sequência foi lançada em 10 de fevereiro de 2017 e, no CinemaCon de 2016, 
+        Reeves deu a entender que mais sequências haviam sido planejadas. 
+        Após o lançamento de <strong>John Wick: Chapter 2</strong>, um terceiro filme foi lançado em 17 de maio de 2019 com o nome de 
+      <strong>John Wick: Chapter 3 - Parabellum</strong>. Uma quarta parte, <strong>John Wick: Capítulo 4</strong>, está em andamento e 
+        está previsto para ser lançado em 21 de maio de 2021.</p>
     </div>
   </div>
 
   <!-- Este é o menu inferior perto do rodapé do site -->
-  <aside>
-			<nav>
-				<ul>
-					<li><a href="index.html">John Wick: De volta ao jogo</a></li>
-					<li><a href="">John Wick 2: Um novo dia para matar</a></li>
-					<li><a href="">John Wick 3: Parabellum</a></li>
-					<li><a href="">John Wick 4</a></li>
-				</ul>
-      </nav>
-  </aside>
+  <div class="row row-cols-1 row-cols-md-2">
+    <div class="col mb-4">
+      <div class="card h-100">
+        <a href=""><img src="https://entreterse.s3.amazonaws.com/wp-content/uploads/2019/04/John-Wick-De-Volta-ao-Jogo-cover.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <a href="" style="text-decoration: none;"><h5 class="card-title" style="color: #322988;">John Wick: De volta ao jogo</h5></a>
+          <p class="card-text" style="color: #0d092a">John Wick é um lendário assassino de aluguel aposentado, lidando com o luto após perder o grande amor de sua vida.
+             Quando um gângster invade sua casa, mata seu cachorro e rouba seu carro, ele é forçado a voltar à ativa e inicia sua vingança.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <a href=""><img src="https://lh3.googleusercontent.com/proxy/dC9dzP2tzd-rHtImTWMmtHlU4uPvF1aLHWH3uiV46yNOjf8ipffJj0Ndf0qUw3hghDAKQq9IfKpTq0FdD7cJIubk2Skt_RKEodEpZP067XT3tmwdPr3RAEDNvC0UZ2U" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <a href="" style="text-decoration: none;"><h5 class="card-title" style="color: #322988;">John Wick 2: Um novo dia para matar</h5></a>
+          <p class="card-text" style="color: #0d092a">John Wick é forçado a deixar a aposentadoria mais uma vez por causa de uma promessa antiga e viaja para Roma,
+             com o objetivo de ajudar um velho amigo a derrubar uma organização secreta,
+              perigosa e mortal de assassinos procurados em todo o mundo.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <a href=""><img src="https://i.pinimg.com/originals/e6/89/29/e689296f7a996064b58bd4267a431187.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <a href="" style="text-decoration: none;"><h5 class="card-title" style="color: #322988;">John Wick 3: Parabellum</h5></a>
+          <p class="card-text" style="color: #0d092a">O lendário John Wick luta para sair de Nova York quando um contrato de 14 
+            milhões de dólares faz dele o alvo dos maiores assassinos do mundo.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <a href=""><img src="https://1.bp.blogspot.com/-WsNSf6jZvS0/XM3YV3O4ZDI/AAAAAAAACJ8/A7K0sxMcw_gb82SO9p7JYoAW9tPIIWxRQCKgBGAs/w0/john-wick-3-keanu-reeves-uhdpaper.com-4K-23.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <a href="" style="text-decoration: none;"><h5 class="card-title" style="color: #322988;">John Wick 4: Capítulo 4</h5></a>
+          <p class="card-text" style="color: #0d092a">John Wick: Chapter 4 é um futuro filme de ação produzido pela Lionsgate,
+             sendo a quarta parte da franquia John Wick, e sendo o sucessor de John Wick 3: Parabellum 
+             com data de lançamento prevista para 21 de maio de 2021.</p>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <!-- Este é o rodapé do site -->
   <footer>

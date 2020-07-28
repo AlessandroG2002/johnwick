@@ -1,55 +1,9 @@
-body {
-    padding: 0; /* Permitindo com que as tags preencham a página */
-    margin: 0; /* Permitindo com que as tags preencham a página */
-    background-color: #f6f1fa; /* Definindo a cor de fundo da página */
-  }
-
-/* Montando o menu */
-.menu {
-    background-color: rgba(12, 12, 12, 0.9); /* Cor de fundo do menu */
-    overflow: hidden; /* Administrando o conteúdo que vá ser mostrado */
-    font-family: 'Titillium Web', sans-serif; /* Definindo a fonte */
-    position: fixed; /* Deixando o menu em uma posição fixa*/
-    top: 0; /* Posicionando o menu no topo da página */
-    width: 100%; /* Cobrindo a tela horizontalmente*/
-  }
-  
-  /* Estilizando os links do menu */
-  .menu a {
-    float: left; /* Alinhando todos a esquerda */
-    display: block; /* Organizando o conteúdo em blocos */
-    color: #f6eaff; /* Alterando a cor da fonte */
-    text-decoration: none; /* Tirando o sublinhado do link */
-    text-align: center; /* Alinhando texto ao centro */
-    padding: 1.5% 3%; /* Alterando o tamanho da área ocupada pelo conteúdo */
-    font-size: 17px; /* Alterando o tamanho da fonte */
-  }
-  
-  /* Mudando a cor dos links quando colocar o mouse em cima */
-  .menu a:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-    color: black;
-  }
-  
-  /* Mudando a cor do link atual */
-  .menu a.ativo {
-    background-color: #7915c5;
-    color: white;
-  }
-
-   /* Estilizando o mini ícone no menu */
-  .menu img {
-    float: right;
-    margin: 1% 2%;
-    width: 2%;
-  }
-
 /* ----------------------------------------------------------------------------------- */
 
 /* Montando um bloco inicial para apresentação da página */
 .inicio {
     font-family: 'Titillium Web', sans-serif;
-    padding: 60px; /* Alterando o tamanho da área ocupada pelo conteúdo */
+    padding: 175px; /* Alterando o tamanho da área ocupada pelo conteúdo */
     text-align: center; 
     background-image: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.5)), url("https://media.giphy.com/media/jVBPvesxWqsLMUquJ2/giphy.gif"); /* Colocando GIF de fundo */
     background-position: center; /* Centralizando GIF de fundo */
@@ -61,7 +15,7 @@ body {
 
   /* Estilizando o botão de link para o trailer do filme */
   .inicio a {
-    background-color: #7915c58a;
+    background-color: #251e50;
     border: none; /* Excluíndo as bordas do botão */
     color: white;
     padding: 20px 50px;
@@ -76,134 +30,15 @@ body {
 
   /* Especificando instruções para quando o mouse estiver em cima do botão */
   .inicio a:hover {
-    background-color: #7915c5;
+    background-color: #352a7a;
     color: white;
-  }
-
-/* ----------------------------------------------------------------------------------- */
-
-/* Montando a tabela de pessoas que trabalharam no filme */
-.creditos {
-  background-color: #070508;
-  table-layout: auto; /* Organização da tabela automática */
-  margin-left: auto; /* Margem esquerda da tabela automática */
-  margin-right: auto; /* Margem direita da tabela automática */
-  margin-top: 20px; /* Margem de cima da tabela 20px */
-  margin-bottom: 20px; /* Margem de baixo da tabela 20px */
-  border-radius: 8px;
-  font-family: 'Titillium Web', sans-serif;
-  color: white;
-  border-collapse: collapse; /* Borda da tabela */
-}
-
-  /* Organizando as categorias da tabela */
-  .creditos th {
-    background-color: #7915c5;
-    text-align: left; /* Colocando o texto das categoria na esquerda */
-    padding: 12px;
-  }
-
-  /* Organizando as células da tabela */
-  .creditos td {
-    background-color: #070508;
-    text-align: center; /* Colocando o texto das células no centro */
-    padding: 12px;
-  }
-
-/* ----------------------------------------------------------------------------------- */
-
-/* Organizando os textos do site */
-.texto {
-  font-family: 'Roboto', sans-serif;
-  margin: auto;
-  width: 70%; /* Definindo a largura do texto como 70% da página */
-  text-align: center;
-  color: black;
-}
-
-  /* Partes escritas do texto */
-  .texto p{
-    text-align: justify; /* Deixando o texto justificado */
-  }
-
-  /* Imagens do texto */
-  .texto img{
-    width:100%;
-    border-radius: 8px;
-  }
-
-/* ----------------------------------------------------------------------------------- */
-
-/* Organizando a parte da recepção do filme */
-.recepcao {
-  background-color: #070508;
-  font-family: 'Roboto', sans-serif;
-  margin: auto;
-  text-align: center;
-  width: 90%;
-  color: white;
-  border-radius: 8px;
-}
-
-  /* Título da seção */
-  .recepcao h1 {
-    padding: 2%;
-  }
-
-  /* Estilizando os blockquotes utilizados na seção */
-  .recepcao blockquote {
-    padding: 2%;
-    background-color: #7915c5;
-    text-align: justify;
-    border-radius: 8px;
-  }
-
-  /* Estilizando as colunas que separam os conteúdos */
-  .coluna {
-    background-color: #070508;
-    float: left; /* Fazendo com que as colunas se organizem para a esquerda */
-    width: 30%;
-    padding: 1%;
-    margin: 0.5%;
-    border-radius: 8px;
-  }
-
-/* ----------------------------------------------------------------------------------- */
-
-/* Estilizando o menu inferior no final da página */
-aside {
-  clear: both;
-  padding: 0.5%;
-	background-color: #7915c5;
-  color: white;
-  text-align: center;
-  font-family: 'Titillium Web', sans-serif;
-}
-
-  /* Estilizando os links do menu inferior */
-  aside a {
-    color: inherit; /* Herdando a cor utilizada no aside */
     text-decoration: none;
   }
 
-  /* Mudando a cor dos links quando colocar o mouse em cima */
-  aside a:hover {
-    color: #ae6fdf;
+  .card-img-top:hover{
+    transition: transform .2s;
+    transform: scale(1.01);
   }
 
-  /* Organizando os itens da lista, os links no caso */
-  aside li {
-    display: inline-block;
-    font-size: 20px;
-    padding: 0.5%;
-  }
 
 /* ----------------------------------------------------------------------------------- */
-
-/* Rodapé da página */
-footer {
-  font-family: 'Titillium Web', sans-serif;
-  text-align: center;
-	background-color: black;
-	color: white;
-}
