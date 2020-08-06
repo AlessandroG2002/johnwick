@@ -5,20 +5,53 @@
     font-family: 'Titillium Web', sans-serif;
     padding: 175px; /* Alterando o tamanho da área ocupada pelo conteúdo */
     text-align: center; 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.725)), url("https://i.pinimg.com/originals/2e/06/39/2e0639ea34c1da64c7a833ec67eb9143.gif"); /* Colocando GIF de fundo */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.5)), url("https://thumbs.gfycat.com/ValuableDistinctEnglishsetter-size_restricted.gif"); /* Colocando GIF de fundo */
     background-position: center; /* Centralizando GIF de fundo */
     background-repeat: no-repeat; /* Forçando o GIF de fundo a não se repetir pelo bloco */
     background-size: cover; /* Mudando as dimensões do GIF para cobrir o bloco inteiramente */
-    color: rgb(255, 240, 152);
-    font-size: 30px;
+    color: #ffffff;
+    font-size: 50px;
 }
 
 .inicio h1 {
-    font-size: 150px;
-    font-family: 'Fugaz One', cursive;
+  font-size: 150px;
+  font-family: 'Fugaz One', cursive;
 }
 
+  /* Estilizando o botão de link para o trailer do filme */
+  .inicio a {
+    background-color: #c21b1b;
+    border: none; /* Excluíndo as bordas do botão */
+    color: white;
+    padding: 20px 50px;
+    border-radius: 8px; /* Arredondando as diagonais do botão */
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    transition-duration: 0.4s; /* Duração da transição de mudança */
+    cursor: pointer; /* Alterando o ícone do mouse */
+  }
+
+  /* Especificando instruções para quando o mouse estiver em cima do botão */
+  .inicio a:hover {
+    background-color: #e04b4b;
+    color: white;
+    text-decoration: none;
+  }
+
+  .card-img-top:hover{
+    transition: transform .2s;
+    transform: scale(1.01);
+  }
+
+
 /* ----------------------------------------------------------------------------------- */
+
+.nav-item {
+  font-family: 'Fugaz One', cursive;
+}
+
 
 .container {
   font-family: 'Roboto', sans-serif;
@@ -28,27 +61,10 @@
   font-size: 20px
 }
 
-.carousel-inner a {
-    font-family: 'Fugaz One', cursive;
-    background-color: rgba(0, 0, 0, 0.725);
-    border: none; /* Excluíndo as bordas do botão */
-    color: white;
-    padding: 8px;
-    border-radius: 8px; /* Arredondando as diagonais do botão */
-    text-align: center;
-    display: inline-block;
-    text-decoration: none;
-    font-size: 30px;
-    transition-duration: 0.4s; /* Duração da transição de mudança */
-    cursor: pointer; /* Alterando o ícone do mouse */
+.container h1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 70px
 }
-
-.carousel-inner a:hover {
-    text-decoration: none;
-    transition: transform .2s;
-    transform: scale(1.05);
-    color: rgb(255, 240, 152);
-  }
 
 .container h5 {
   font-family: 'Titillium Web', sans-serif;
